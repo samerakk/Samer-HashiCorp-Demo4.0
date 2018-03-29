@@ -26,9 +26,10 @@ To deploy a Nomad Cluster:
 2. Follow the readme file under /nomad-consul-ami to build Nomad Consul AMI, or See the [nomad-consul-ami example](https://github.com/hashicorp/terraform-aws-nomad/tree/master/examples/nomad-consul-ami) documentation for 
    instructions. Make sure to note down the ID of the AMI.
 3. Install [Terraform](https://www.terraform.io/).
-4. Open `vars.tf`, set the environment variables specified at the top of the file, and fill in any other variables that
+4. Go to /TFBuild
+5. Open `vars.tf`, set the environment variables specified at the top of the file, and fill in any other variables that
    don't have a default, including putting your AMI ID into the `ami_id` variable.
-5. Run `terraform get`.
-6. Run `terraform plan`.
-7. If the plan looks good, run `terraform apply`.
+6. Run `terraform get`.
+7. Run `terraform plan`.
+8. If the plan looks good, run `terraform apply`.
 
